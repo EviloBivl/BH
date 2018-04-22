@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Accounts" representedClassName="Accounts" syncable="YES">
+        <attribute name="accountGroupId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="accountGroupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accountId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="accountNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="accountText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="transaction" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="account" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <entity name="Depositor" representedClassName="Depositor" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="transaction" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="depositor" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <entity name="Journal" representedClassName="Journal" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="transaction" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Transaction" inverseName="journal" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <entity name="Taxes" representedClassName="Taxes" syncable="YES">
+        <attribute name="calcFactor" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="createdOn" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="displayedText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="transaction" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="taxes" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <entity name="Transaction" representedClassName="Transaction" syncable="YES">
+        <attribute name="isIncome" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transactionDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="transactionNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transactionValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Accounts" inverseName="transaction" inverseEntity="Accounts" syncable="YES"/>
+        <relationship name="depositor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Depositor" inverseName="transaction" inverseEntity="Depositor" syncable="YES"/>
+        <relationship name="journal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Journal" inverseName="transaction" inverseEntity="Journal" syncable="YES"/>
+        <relationship name="taxes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Taxes" inverseName="transaction" inverseEntity="Taxes" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Accounts" positionX="-299" positionY="-21" width="128" height="133"/>
+        <element name="Depositor" positionX="-290" positionY="135" width="128" height="88"/>
+        <element name="Journal" positionX="-236" positionY="243" width="128" height="73"/>
+        <element name="Taxes" positionX="-380" positionY="330" width="128" height="103"/>
+        <element name="Transaction" positionX="-578" positionY="90" width="119" height="163"/>
+    </elements>
+</model>

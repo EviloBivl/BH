@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="NWQ-Ti-3IR" customClass="OverViewView" customModule="Buchhaltung" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="25"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9ku-bD-LLT">
+                    <rect key="frame" x="2" y="4" width="306" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Label" id="OLZ-c8-boz">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9ku-bD-LLT" firstAttribute="leading" secondItem="NWQ-Ti-3IR" secondAttribute="leading" constant="4" id="HLY-bD-puG"/>
+                <constraint firstAttribute="trailing" secondItem="9ku-bD-LLT" secondAttribute="trailing" constant="4" id="Iyx-FW-GFu"/>
+                <constraint firstAttribute="bottom" secondItem="9ku-bD-LLT" secondAttribute="bottom" constant="4" id="TtH-XD-qox"/>
+                <constraint firstItem="9ku-bD-LLT" firstAttribute="top" secondItem="NWQ-Ti-3IR" secondAttribute="top" constant="4" id="kav-0a-ozU"/>
+            </constraints>
+            <connections>
+                <outlet property="textLabel" destination="9ku-bD-LLT" id="Hn8-Cz-aWM"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="167.5"/>
+        </customView>
+    </objects>
+</document>

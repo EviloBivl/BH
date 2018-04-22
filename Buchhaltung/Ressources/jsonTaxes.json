@@ -1,0 +1,16 @@
+{
+    "Taxes" : [
+               {
+               "CalculationFactor" : 1.1,
+               "DisplayedText" : "10% MwSt"
+               },
+               {
+               "CalculationFactor" : 1.2,
+               "DisplayedText" : "20% MwSt"
+               },
+               {
+               "CalculationFactor" : 1,
+               "DisplayedText" : "0% MwSt"
+               }
+    ]
+}

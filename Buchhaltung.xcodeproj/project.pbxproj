@@ -1,0 +1,1007 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AAAE7932B67C526C9CA9E8E /* Pods_Buchhaltung.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686F5E9FF4869503B89A74B2 /* Pods_Buchhaltung.framework */; };
+		5C1DF2212034BDD800094F82 /* TransactionInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1DF2202034BDD800094F82 /* TransactionInput.storyboard */; };
+		5C1DF2232034C1E300094F82 /* TransactionInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1DF2222034C1E300094F82 /* TransactionInputViewController.swift */; };
+		5C1DF2252034C2FB00094F82 /* TransactionInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1DF2242034C2FB00094F82 /* TransactionInputViewModel.swift */; };
+		5C1DF2292034C34B00094F82 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1DF2282034C34B00094F82 /* ViewModelDelegate.swift */; };
+		5C3ABD04204B048A003BCB36 /* DepositorCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3ABD03204B048A003BCB36 /* DepositorCreationViewController.swift */; };
+		5C3ABD06204B0497003BCB36 /* DepositorCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3ABD05204B0497003BCB36 /* DepositorCreationViewModel.swift */; };
+		5C3ABD08204B0A22003BCB36 /* NSViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3ABD07204B0A22003BCB36 /* NSViewController+Extension.swift */; };
+		5C3ABD0C204C29EB003BCB36 /* Overview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3ABD0B204C29EB003BCB36 /* Overview.storyboard */; };
+		5C3B7B352030920A008E9C91 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B7B342030920A008E9C91 /* DatabaseController.swift */; };
+		5C3B7B4C20309C4F008E9C91 /* ManagedObjectProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B7B4B20309C4F008E9C91 /* ManagedObjectProperty.swift */; };
+		5C3B7B4E2030A045008E9C91 /* WindowClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B7B4D2030A045008E9C91 /* WindowClass.swift */; };
+		5C3B7B502030A092008E9C91 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B7B4F2030A092008E9C91 /* WindowController.swift */; };
+		5C3B7B6620337AC9008E9C91 /* OverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B7B6520337AC9008E9C91 /* OverViewController.swift */; };
+		5C3B7B6A20337D83008E9C91 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B7B6920337D83008E9C91 /* OverviewView.swift */; };
+		5C3B7B6C20337DBC008E9C91 /* OverviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3B7B6B20337DBC008E9C91 /* OverviewView.xib */; };
+		5C3C34E02034A7AB0053DCDD /* XibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C34DF2034A7AB0053DCDD /* XibLoadable.swift */; };
+		5C3C34E22034A8DE0053DCDD /* NSTableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C34E12034A8DE0053DCDD /* NSTableView+Extension.swift */; };
+		5C5C7D2D2046FA2E002064CF /* OverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C7D2C2046FA2E002064CF /* OverviewViewModel.swift */; };
+		5C8DD73C20485CBA00DE874F /* jsonTaxes.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DD73B20485CBA00DE874F /* jsonTaxes.json */; };
+		5CA1E7FC204AC55A0086C404 /* Depositor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA1E7FB204AC55A0086C404 /* Depositor.storyboard */; };
+		5CA1E7FE204ACB0C0086C404 /* DepositorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA1E7FD204ACB0C0086C404 /* DepositorViewModel.swift */; };
+		5CA1E800204ADC6C0086C404 /* DepositorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA1E7FF204ADC6C0086C404 /* DepositorViewController.swift */; };
+		5CA811B42030541B0083BAB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA811B32030541B0083BAB8 /* AppDelegate.swift */; };
+		5CA811B62030541B0083BAB8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA811B52030541B0083BAB8 /* StartViewController.swift */; };
+		5CA811B92030541B0083BAB8 /* Buchhaltung.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CA811B72030541B0083BAB8 /* Buchhaltung.xcdatamodeld */; };
+		5CA811BB2030541B0083BAB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA811BA2030541B0083BAB8 /* Assets.xcassets */; };
+		5CA811BE2030541B0083BAB8 /* StartView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA811BC2030541B0083BAB8 /* StartView.storyboard */; };
+		5CA811C92030541B0083BAB8 /* BuchhaltungTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA811C82030541B0083BAB8 /* BuchhaltungTests.swift */; };
+		5CA811D42030541B0083BAB8 /* BuchhaltungUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA811D32030541B0083BAB8 /* BuchhaltungUITests.swift */; };
+		5CBFB8F82037439C00486F3D /* DatabaseLoadSaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBFB8F72037439C00486F3D /* DatabaseLoadSaveTests.swift */; };
+		5CD93DBB2039D3E4000CDC0E /* ImportHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD93DBA2039D3E4000CDC0E /* ImportHandler.swift */; };
+		5CD93DBD2039FA8A000CDC0E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD93DBC2039FA8A000CDC0E /* String+Extension.swift */; };
+		5CD93DC1203A1963000CDC0E /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD93DC0203A1963000CDC0E /* JSON.swift */; };
+		5CD93DC3203A1985000CDC0E /* JSONDeserializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD93DC2203A1985000CDC0E /* JSONDeserializable.swift */; };
+		5CD93DC7203A1C42000CDC0E /* jsonAccounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD93DC6203A1C42000CDC0E /* jsonAccounts.json */; };
+		5CEAA84320398793004FEF5F /* Journal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAA83920398792004FEF5F /* Journal+CoreDataProperties.swift */; };
+		5CEAA84420398793004FEF5F /* Accounts+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAA83A20398792004FEF5F /* Accounts+CoreDataProperties.swift */; };
+		5CEAA84520398793004FEF5F /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAA83B20398792004FEF5F /* Transaction+CoreDataProperties.swift */; };
+		5CEAA84620398793004FEF5F /* Depositor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAA83C20398793004FEF5F /* Depositor+CoreDataClass.swift */; };
+		5CEAA84720398793004FEF5F /* Journal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAA83D20398793004FEF5F /* Journal+CoreDataClass.swift */; };
+		5CEAA84820398793004FEF5F /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAA83E20398793004FEF5F /* Transaction+CoreDataClass.swift */; };
+		5CEAA84920398793004FEF5F /* Accounts+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAA83F20398793004FEF5F /* Accounts+CoreDataClass.swift */; };
+		5CEAA84A20398793004FEF5F /* Taxes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAA84020398793004FEF5F /* Taxes+CoreDataProperties.swift */; };
+		5CEAA84B20398793004FEF5F /* Depositor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAA84120398793004FEF5F /* Depositor+CoreDataProperties.swift */; };
+		5CEAA84C20398793004FEF5F /* Taxes+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAA84220398793004FEF5F /* Taxes+CoreDataClass.swift */; };
+		AE95132422F9B387A5E66712 /* Pods_BuchhaltungUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626702A40436CA68D3DFB0AE /* Pods_BuchhaltungUITests.framework */; };
+		DA7947A88B77C5D77863D52A /* Pods_BuchhaltungTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9AFD48FE71967A17FBD02A8 /* Pods_BuchhaltungTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CA811C52030541B0083BAB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CA811A82030541B0083BAB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CA811AF2030541B0083BAB8;
+			remoteInfo = Buchhaltung;
+		};
+		5CA811D02030541B0083BAB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CA811A82030541B0083BAB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CA811AF2030541B0083BAB8;
+			remoteInfo = Buchhaltung;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3822C72475EE3D7273DC1D2B /* Pods-Buchhaltung.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buchhaltung.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Buchhaltung/Pods-Buchhaltung.debug.xcconfig"; sourceTree = "<group>"; };
+		5C1DF2202034BDD800094F82 /* TransactionInput.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionInput.storyboard; sourceTree = "<group>"; };
+		5C1DF2222034C1E300094F82 /* TransactionInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInputViewController.swift; sourceTree = "<group>"; };
+		5C1DF2242034C2FB00094F82 /* TransactionInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInputViewModel.swift; sourceTree = "<group>"; };
+		5C1DF2282034C34B00094F82 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
+		5C3ABD03204B048A003BCB36 /* DepositorCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositorCreationViewController.swift; sourceTree = "<group>"; };
+		5C3ABD05204B0497003BCB36 /* DepositorCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositorCreationViewModel.swift; sourceTree = "<group>"; };
+		5C3ABD07204B0A22003BCB36 /* NSViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSViewController+Extension.swift"; sourceTree = "<group>"; };
+		5C3ABD0B204C29EB003BCB36 /* Overview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Overview.storyboard; sourceTree = "<group>"; };
+		5C3B7B342030920A008E9C91 /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
+		5C3B7B4B20309C4F008E9C91 /* ManagedObjectProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectProperty.swift; sourceTree = "<group>"; };
+		5C3B7B4D2030A045008E9C91 /* WindowClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowClass.swift; sourceTree = "<group>"; };
+		5C3B7B4F2030A092008E9C91 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		5C3B7B6520337AC9008E9C91 /* OverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverViewController.swift; sourceTree = "<group>"; };
+		5C3B7B6920337D83008E9C91 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
+		5C3B7B6B20337DBC008E9C91 /* OverviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverviewView.xib; sourceTree = "<group>"; };
+		5C3C34DF2034A7AB0053DCDD /* XibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibLoadable.swift; sourceTree = "<group>"; };
+		5C3C34E12034A8DE0053DCDD /* NSTableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+Extension.swift"; sourceTree = "<group>"; };
+		5C5C7D2C2046FA2E002064CF /* OverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModel.swift; sourceTree = "<group>"; };
+		5C8DD73B20485CBA00DE874F /* jsonTaxes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jsonTaxes.json; sourceTree = "<group>"; };
+		5CA1E7FB204AC55A0086C404 /* Depositor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Depositor.storyboard; sourceTree = "<group>"; };
+		5CA1E7FD204ACB0C0086C404 /* DepositorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositorViewModel.swift; sourceTree = "<group>"; };
+		5CA1E7FF204ADC6C0086C404 /* DepositorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepositorViewController.swift; sourceTree = "<group>"; };
+		5CA811B02030541B0083BAB8 /* Buchhaltung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buchhaltung.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA811B32030541B0083BAB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CA811B52030541B0083BAB8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		5CA811B82030541B0083BAB8 /* Buchhaltung.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Buchhaltung.xcdatamodel; sourceTree = "<group>"; };
+		5CA811BA2030541B0083BAB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CA811BD2030541B0083BAB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StartView.storyboard; sourceTree = "<group>"; };
+		5CA811BF2030541B0083BAB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CA811C42030541B0083BAB8 /* BuchhaltungTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuchhaltungTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA811C82030541B0083BAB8 /* BuchhaltungTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuchhaltungTests.swift; sourceTree = "<group>"; };
+		5CA811CA2030541B0083BAB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CA811CF2030541B0083BAB8 /* BuchhaltungUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuchhaltungUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA811D32030541B0083BAB8 /* BuchhaltungUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuchhaltungUITests.swift; sourceTree = "<group>"; };
+		5CA811D52030541B0083BAB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CBFB8F72037439C00486F3D /* DatabaseLoadSaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseLoadSaveTests.swift; sourceTree = "<group>"; };
+		5CD93DBA2039D3E4000CDC0E /* ImportHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportHandler.swift; sourceTree = "<group>"; };
+		5CD93DBC2039FA8A000CDC0E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		5CD93DC0203A1963000CDC0E /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		5CD93DC2203A1985000CDC0E /* JSONDeserializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDeserializable.swift; sourceTree = "<group>"; };
+		5CD93DC6203A1C42000CDC0E /* jsonAccounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = jsonAccounts.json; path = Buchhaltung/Ressources/jsonAccounts.json; sourceTree = SOURCE_ROOT; };
+		5CEAA83920398792004FEF5F /* Journal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5CEAA83A20398792004FEF5F /* Accounts+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Accounts+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5CEAA83B20398792004FEF5F /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5CEAA83C20398793004FEF5F /* Depositor+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Depositor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5CEAA83D20398793004FEF5F /* Journal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5CEAA83E20398793004FEF5F /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5CEAA83F20398793004FEF5F /* Accounts+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Accounts+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5CEAA84020398793004FEF5F /* Taxes+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Taxes+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5CEAA84120398793004FEF5F /* Depositor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Depositor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5CEAA84220398793004FEF5F /* Taxes+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Taxes+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5E4E9391C81401498B00199F /* Pods-BuchhaltungUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuchhaltungUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuchhaltungUITests/Pods-BuchhaltungUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E83BCD3B0ADB22DE51C52E6 /* Pods-Buchhaltung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buchhaltung.release.xcconfig"; path = "Pods/Target Support Files/Pods-Buchhaltung/Pods-Buchhaltung.release.xcconfig"; sourceTree = "<group>"; };
+		626702A40436CA68D3DFB0AE /* Pods_BuchhaltungUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuchhaltungUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		686F5E9FF4869503B89A74B2 /* Pods_Buchhaltung.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Buchhaltung.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF4449BF3D81708BE997EC2 /* Pods-BuchhaltungUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuchhaltungUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuchhaltungUITests/Pods-BuchhaltungUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D0268E6FEA253497FD9D9325 /* Pods-BuchhaltungTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuchhaltungTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuchhaltungTests/Pods-BuchhaltungTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9AFD48FE71967A17FBD02A8 /* Pods_BuchhaltungTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuchhaltungTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F419966F6396CC4D4B2C718F /* Pods-BuchhaltungTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuchhaltungTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuchhaltungTests/Pods-BuchhaltungTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CA811AD2030541B0083BAB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AAAE7932B67C526C9CA9E8E /* Pods_Buchhaltung.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA811C12030541B0083BAB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7947A88B77C5D77863D52A /* Pods_BuchhaltungTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA811CC2030541B0083BAB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE95132422F9B387A5E66712 /* Pods_BuchhaltungUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C1DF21F2034BCF200094F82 /* AppKit Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5C3C34E12034A8DE0053DCDD /* NSTableView+Extension.swift */,
+				5CD93DBC2039FA8A000CDC0E /* String+Extension.swift */,
+				5C3ABD07204B0A22003BCB36 /* NSViewController+Extension.swift */,
+			);
+			path = "AppKit Extensions";
+			sourceTree = "<group>";
+		};
+		5C3ABD09204C19A5003BCB36 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				5CD93DC6203A1C42000CDC0E /* jsonAccounts.json */,
+				5C8DD73B20485CBA00DE874F /* jsonTaxes.json */,
+				5CA811BA2030541B0083BAB8 /* Assets.xcassets */,
+				5CA811B72030541B0083BAB8 /* Buchhaltung.xcdatamodeld */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		5C3ABD0A204C19BD003BCB36 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5CA811B32030541B0083BAB8 /* AppDelegate.swift */,
+				5C3B7B4F2030A092008E9C91 /* WindowController.swift */,
+				5C3B7B4D2030A045008E9C91 /* WindowClass.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5C3B7B3A203099B4008E9C91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5CEAA83E20398793004FEF5F /* Transaction+CoreDataClass.swift */,
+				5CEAA83B20398792004FEF5F /* Transaction+CoreDataProperties.swift */,
+				5CEAA83F20398793004FEF5F /* Accounts+CoreDataClass.swift */,
+				5CEAA83A20398792004FEF5F /* Accounts+CoreDataProperties.swift */,
+				5CEAA84220398793004FEF5F /* Taxes+CoreDataClass.swift */,
+				5CEAA84020398793004FEF5F /* Taxes+CoreDataProperties.swift */,
+				5CEAA83C20398793004FEF5F /* Depositor+CoreDataClass.swift */,
+				5CEAA84120398793004FEF5F /* Depositor+CoreDataProperties.swift */,
+				5CEAA83D20398793004FEF5F /* Journal+CoreDataClass.swift */,
+				5CEAA83920398792004FEF5F /* Journal+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C3B7B6720337D58008E9C91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5CA811BC2030541B0083BAB8 /* StartView.storyboard */,
+				5CA811B52030541B0083BAB8 /* StartViewController.swift */,
+				5C1DF2202034BDD800094F82 /* TransactionInput.storyboard */,
+				5C1DF2222034C1E300094F82 /* TransactionInputViewController.swift */,
+				5C1DF2242034C2FB00094F82 /* TransactionInputViewModel.swift */,
+				5C3B7B6520337AC9008E9C91 /* OverViewController.swift */,
+				5C5C7D2C2046FA2E002064CF /* OverviewViewModel.swift */,
+				5CA1E7FB204AC55A0086C404 /* Depositor.storyboard */,
+				5CA1E7FF204ADC6C0086C404 /* DepositorViewController.swift */,
+				5CA1E7FD204ACB0C0086C404 /* DepositorViewModel.swift */,
+				5C3ABD03204B048A003BCB36 /* DepositorCreationViewController.swift */,
+				5C3ABD05204B0497003BCB36 /* DepositorCreationViewModel.swift */,
+				5C3ABD0B204C29EB003BCB36 /* Overview.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C3B7B6820337D61008E9C91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C3B7B6920337D83008E9C91 /* OverviewView.swift */,
+				5C3B7B6B20337DBC008E9C91 /* OverviewView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5C3C34DE2034A7860053DCDD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5C3B7B4B20309C4F008E9C91 /* ManagedObjectProperty.swift */,
+				5C3C34DF2034A7AB0053DCDD /* XibLoadable.swift */,
+				5C1DF2282034C34B00094F82 /* ViewModelDelegate.swift */,
+				5CD93DC0203A1963000CDC0E /* JSON.swift */,
+				5CD93DC2203A1985000CDC0E /* JSONDeserializable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5CA811A72030541B0083BAB8 = {
+			isa = PBXGroup;
+			children = (
+				5CA811B22030541B0083BAB8 /* Buchhaltung */,
+				5CA811C72030541B0083BAB8 /* BuchhaltungTests */,
+				5CA811D22030541B0083BAB8 /* BuchhaltungUITests */,
+				5CA811B12030541B0083BAB8 /* Products */,
+				8172F6D89ABA21FB88C4DEB6 /* Pods */,
+				D51428C0782B23B78938B727 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5CA811B12030541B0083BAB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CA811B02030541B0083BAB8 /* Buchhaltung.app */,
+				5CA811C42030541B0083BAB8 /* BuchhaltungTests.xctest */,
+				5CA811CF2030541B0083BAB8 /* BuchhaltungUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CA811B22030541B0083BAB8 /* Buchhaltung */ = {
+			isa = PBXGroup;
+			children = (
+				5CA811BF2030541B0083BAB8 /* Info.plist */,
+				5C3ABD0A204C19BD003BCB36 /* Application */,
+				5C1DF21F2034BCF200094F82 /* AppKit Extensions */,
+				5C3ABD09204C19A5003BCB36 /* Ressources */,
+				5CD93DB92039D3BB000CDC0E /* DataHandler */,
+				5C3C34DE2034A7860053DCDD /* Protocols */,
+				5C3B7B6820337D61008E9C91 /* Views */,
+				5C3B7B3A203099B4008E9C91 /* Models */,
+				5C3B7B6720337D58008E9C91 /* Controller */,
+			);
+			path = Buchhaltung;
+			sourceTree = "<group>";
+		};
+		5CA811C72030541B0083BAB8 /* BuchhaltungTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CA811C82030541B0083BAB8 /* BuchhaltungTests.swift */,
+				5CA811CA2030541B0083BAB8 /* Info.plist */,
+				5CBFB8F72037439C00486F3D /* DatabaseLoadSaveTests.swift */,
+			);
+			path = BuchhaltungTests;
+			sourceTree = "<group>";
+		};
+		5CA811D22030541B0083BAB8 /* BuchhaltungUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CA811D32030541B0083BAB8 /* BuchhaltungUITests.swift */,
+				5CA811D52030541B0083BAB8 /* Info.plist */,
+			);
+			path = BuchhaltungUITests;
+			sourceTree = "<group>";
+		};
+		5CD93DB92039D3BB000CDC0E /* DataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				5C3B7B342030920A008E9C91 /* DatabaseController.swift */,
+				5CD93DBA2039D3E4000CDC0E /* ImportHandler.swift */,
+			);
+			path = DataHandler;
+			sourceTree = "<group>";
+		};
+		8172F6D89ABA21FB88C4DEB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3822C72475EE3D7273DC1D2B /* Pods-Buchhaltung.debug.xcconfig */,
+				5E83BCD3B0ADB22DE51C52E6 /* Pods-Buchhaltung.release.xcconfig */,
+				D0268E6FEA253497FD9D9325 /* Pods-BuchhaltungTests.debug.xcconfig */,
+				F419966F6396CC4D4B2C718F /* Pods-BuchhaltungTests.release.xcconfig */,
+				5E4E9391C81401498B00199F /* Pods-BuchhaltungUITests.debug.xcconfig */,
+				BDF4449BF3D81708BE997EC2 /* Pods-BuchhaltungUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D51428C0782B23B78938B727 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				686F5E9FF4869503B89A74B2 /* Pods_Buchhaltung.framework */,
+				D9AFD48FE71967A17FBD02A8 /* Pods_BuchhaltungTests.framework */,
+				626702A40436CA68D3DFB0AE /* Pods_BuchhaltungUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CA811AF2030541B0083BAB8 /* Buchhaltung */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CA811D82030541B0083BAB8 /* Build configuration list for PBXNativeTarget "Buchhaltung" */;
+			buildPhases = (
+				5C9C6A9E7B186FFFDC9ED5B0 /* [CP] Check Pods Manifest.lock */,
+				5CA811AC2030541B0083BAB8 /* Sources */,
+				5CA811AD2030541B0083BAB8 /* Frameworks */,
+				5CA811AE2030541B0083BAB8 /* Resources */,
+				65B5A8D98E5D68F6285E96E5 /* [CP] Embed Pods Frameworks */,
+				6A5072D3A9AB43911682EF1B /* [CP] Copy Pods Resources */,
+				5C3B7B3320308EC8008E9C91 /* SwiftGen */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Buchhaltung;
+			productName = Buchhaltung;
+			productReference = 5CA811B02030541B0083BAB8 /* Buchhaltung.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CA811C32030541B0083BAB8 /* BuchhaltungTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CA811DB2030541B0083BAB8 /* Build configuration list for PBXNativeTarget "BuchhaltungTests" */;
+			buildPhases = (
+				BFFB9D4C8D88C1A1C4DAB30F /* [CP] Check Pods Manifest.lock */,
+				5CA811C02030541B0083BAB8 /* Sources */,
+				5CA811C12030541B0083BAB8 /* Frameworks */,
+				5CA811C22030541B0083BAB8 /* Resources */,
+				2807B851C27691D249DB0F75 /* [CP] Embed Pods Frameworks */,
+				11107DB790C4CF9C93766988 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CA811C62030541B0083BAB8 /* PBXTargetDependency */,
+			);
+			name = BuchhaltungTests;
+			productName = BuchhaltungTests;
+			productReference = 5CA811C42030541B0083BAB8 /* BuchhaltungTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5CA811CE2030541B0083BAB8 /* BuchhaltungUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CA811DE2030541B0083BAB8 /* Build configuration list for PBXNativeTarget "BuchhaltungUITests" */;
+			buildPhases = (
+				A74774D692F47668497DE651 /* [CP] Check Pods Manifest.lock */,
+				5CA811CB2030541B0083BAB8 /* Sources */,
+				5CA811CC2030541B0083BAB8 /* Frameworks */,
+				5CA811CD2030541B0083BAB8 /* Resources */,
+				DBE504AB23B5F07A8DCF927D /* [CP] Embed Pods Frameworks */,
+				E5BCB2166F324AADC750F69F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CA811D12030541B0083BAB8 /* PBXTargetDependency */,
+			);
+			name = BuchhaltungUITests;
+			productName = BuchhaltungUITests;
+			productReference = 5CA811CF2030541B0083BAB8 /* BuchhaltungUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CA811A82030541B0083BAB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Paul Neuhold";
+				TargetAttributes = {
+					5CA811AF2030541B0083BAB8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = CP2P6S2RV5;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					5CA811C32030541B0083BAB8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = CP2P6S2RV5;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5CA811AF2030541B0083BAB8;
+					};
+					5CA811CE2030541B0083BAB8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = CP2P6S2RV5;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5CA811AF2030541B0083BAB8;
+					};
+				};
+			};
+			buildConfigurationList = 5CA811AB2030541B0083BAB8 /* Build configuration list for PBXProject "Buchhaltung" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CA811A72030541B0083BAB8;
+			productRefGroup = 5CA811B12030541B0083BAB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CA811AF2030541B0083BAB8 /* Buchhaltung */,
+				5CA811C32030541B0083BAB8 /* BuchhaltungTests */,
+				5CA811CE2030541B0083BAB8 /* BuchhaltungUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CA811AE2030541B0083BAB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA1E7FC204AC55A0086C404 /* Depositor.storyboard in Resources */,
+				5C3ABD0C204C29EB003BCB36 /* Overview.storyboard in Resources */,
+				5C1DF2212034BDD800094F82 /* TransactionInput.storyboard in Resources */,
+				5C8DD73C20485CBA00DE874F /* jsonTaxes.json in Resources */,
+				5CA811BB2030541B0083BAB8 /* Assets.xcassets in Resources */,
+				5CD93DC7203A1C42000CDC0E /* jsonAccounts.json in Resources */,
+				5CA811BE2030541B0083BAB8 /* StartView.storyboard in Resources */,
+				5C3B7B6C20337DBC008E9C91 /* OverviewView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA811C22030541B0083BAB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA811CD2030541B0083BAB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11107DB790C4CF9C93766988 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuchhaltungTests/Pods-BuchhaltungTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2807B851C27691D249DB0F75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuchhaltungTests/Pods-BuchhaltungTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C3B7B3320308EC8008E9C91 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/Users/paulneuhold/Documents/XcodeProjects/Buchhaltung/Pods/SwiftGen/bin/swiftgen storyboards -t swift3 $PROJECT_DIR/";
+		};
+		5C9C6A9E7B186FFFDC9ED5B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Buchhaltung-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65B5A8D98E5D68F6285E96E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Buchhaltung/Pods-Buchhaltung-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Buchhaltung/Pods-Buchhaltung-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A5072D3A9AB43911682EF1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Buchhaltung/Pods-Buchhaltung-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A74774D692F47668497DE651 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuchhaltungUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFFB9D4C8D88C1A1C4DAB30F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuchhaltungTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBE504AB23B5F07A8DCF927D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuchhaltungUITests/Pods-BuchhaltungUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5BCB2166F324AADC750F69F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuchhaltungUITests/Pods-BuchhaltungUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CA811AC2030541B0083BAB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA1E7FE204ACB0C0086C404 /* DepositorViewModel.swift in Sources */,
+				5C3B7B6A20337D83008E9C91 /* OverviewView.swift in Sources */,
+				5C3ABD08204B0A22003BCB36 /* NSViewController+Extension.swift in Sources */,
+				5CEAA84B20398793004FEF5F /* Depositor+CoreDataProperties.swift in Sources */,
+				5C3C34E22034A8DE0053DCDD /* NSTableView+Extension.swift in Sources */,
+				5C3B7B352030920A008E9C91 /* DatabaseController.swift in Sources */,
+				5C3ABD06204B0497003BCB36 /* DepositorCreationViewModel.swift in Sources */,
+				5C3B7B4E2030A045008E9C91 /* WindowClass.swift in Sources */,
+				5C3B7B4C20309C4F008E9C91 /* ManagedObjectProperty.swift in Sources */,
+				5CD93DBD2039FA8A000CDC0E /* String+Extension.swift in Sources */,
+				5CEAA84420398793004FEF5F /* Accounts+CoreDataProperties.swift in Sources */,
+				5CEAA84520398793004FEF5F /* Transaction+CoreDataProperties.swift in Sources */,
+				5C5C7D2D2046FA2E002064CF /* OverviewViewModel.swift in Sources */,
+				5C3B7B502030A092008E9C91 /* WindowController.swift in Sources */,
+				5C1DF2252034C2FB00094F82 /* TransactionInputViewModel.swift in Sources */,
+				5C3ABD04204B048A003BCB36 /* DepositorCreationViewController.swift in Sources */,
+				5CEAA84320398793004FEF5F /* Journal+CoreDataProperties.swift in Sources */,
+				5CA811B62030541B0083BAB8 /* StartViewController.swift in Sources */,
+				5CD93DC3203A1985000CDC0E /* JSONDeserializable.swift in Sources */,
+				5CEAA84720398793004FEF5F /* Journal+CoreDataClass.swift in Sources */,
+				5CEAA84C20398793004FEF5F /* Taxes+CoreDataClass.swift in Sources */,
+				5CEAA84620398793004FEF5F /* Depositor+CoreDataClass.swift in Sources */,
+				5CA811B42030541B0083BAB8 /* AppDelegate.swift in Sources */,
+				5CEAA84920398793004FEF5F /* Accounts+CoreDataClass.swift in Sources */,
+				5CEAA84A20398793004FEF5F /* Taxes+CoreDataProperties.swift in Sources */,
+				5C1DF2292034C34B00094F82 /* ViewModelDelegate.swift in Sources */,
+				5CA811B92030541B0083BAB8 /* Buchhaltung.xcdatamodeld in Sources */,
+				5CD93DC1203A1963000CDC0E /* JSON.swift in Sources */,
+				5CD93DBB2039D3E4000CDC0E /* ImportHandler.swift in Sources */,
+				5CEAA84820398793004FEF5F /* Transaction+CoreDataClass.swift in Sources */,
+				5C1DF2232034C1E300094F82 /* TransactionInputViewController.swift in Sources */,
+				5C3C34E02034A7AB0053DCDD /* XibLoadable.swift in Sources */,
+				5CA1E800204ADC6C0086C404 /* DepositorViewController.swift in Sources */,
+				5C3B7B6620337AC9008E9C91 /* OverViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA811C02030541B0083BAB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA811C92030541B0083BAB8 /* BuchhaltungTests.swift in Sources */,
+				5CBFB8F82037439C00486F3D /* DatabaseLoadSaveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA811CB2030541B0083BAB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA811D42030541B0083BAB8 /* BuchhaltungUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CA811C62030541B0083BAB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CA811AF2030541B0083BAB8 /* Buchhaltung */;
+			targetProxy = 5CA811C52030541B0083BAB8 /* PBXContainerItemProxy */;
+		};
+		5CA811D12030541B0083BAB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CA811AF2030541B0083BAB8 /* Buchhaltung */;
+			targetProxy = 5CA811D02030541B0083BAB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5CA811BC2030541B0083BAB8 /* StartView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CA811BD2030541B0083BAB8 /* Base */,
+			);
+			name = StartView.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CA811D62030541B0083BAB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CA811D72030541B0083BAB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		5CA811D92030541B0083BAB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3822C72475EE3D7273DC1D2B /* Pods-Buchhaltung.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CP2P6S2RV5;
+				INFOPLIST_FILE = Buchhaltung/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulneuhold.Buchhaltung;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		5CA811DA2030541B0083BAB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E83BCD3B0ADB22DE51C52E6 /* Pods-Buchhaltung.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CP2P6S2RV5;
+				INFOPLIST_FILE = Buchhaltung/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulneuhold.Buchhaltung;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		5CA811DC2030541B0083BAB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0268E6FEA253497FD9D9325 /* Pods-BuchhaltungTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CP2P6S2RV5;
+				INFOPLIST_FILE = BuchhaltungTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulneuhold.BuchhaltungTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buchhaltung.app/Contents/MacOS/Buchhaltung";
+			};
+			name = Debug;
+		};
+		5CA811DD2030541B0083BAB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F419966F6396CC4D4B2C718F /* Pods-BuchhaltungTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CP2P6S2RV5;
+				INFOPLIST_FILE = BuchhaltungTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulneuhold.BuchhaltungTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buchhaltung.app/Contents/MacOS/Buchhaltung";
+			};
+			name = Release;
+		};
+		5CA811DF2030541B0083BAB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E4E9391C81401498B00199F /* Pods-BuchhaltungUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CP2P6S2RV5;
+				INFOPLIST_FILE = BuchhaltungUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulneuhold.BuchhaltungUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Buchhaltung;
+			};
+			name = Debug;
+		};
+		5CA811E02030541B0083BAB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDF4449BF3D81708BE997EC2 /* Pods-BuchhaltungUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CP2P6S2RV5;
+				INFOPLIST_FILE = BuchhaltungUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulneuhold.BuchhaltungUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Buchhaltung;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CA811AB2030541B0083BAB8 /* Build configuration list for PBXProject "Buchhaltung" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA811D62030541B0083BAB8 /* Debug */,
+				5CA811D72030541B0083BAB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CA811D82030541B0083BAB8 /* Build configuration list for PBXNativeTarget "Buchhaltung" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA811D92030541B0083BAB8 /* Debug */,
+				5CA811DA2030541B0083BAB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CA811DB2030541B0083BAB8 /* Build configuration list for PBXNativeTarget "BuchhaltungTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA811DC2030541B0083BAB8 /* Debug */,
+				5CA811DD2030541B0083BAB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CA811DE2030541B0083BAB8 /* Build configuration list for PBXNativeTarget "BuchhaltungUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA811DF2030541B0083BAB8 /* Debug */,
+				5CA811E02030541B0083BAB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5CA811B72030541B0083BAB8 /* Buchhaltung.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5CA811B82030541B0083BAB8 /* Buchhaltung.xcdatamodel */,
+			);
+			currentVersion = 5CA811B82030541B0083BAB8 /* Buchhaltung.xcdatamodel */;
+			path = Buchhaltung.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5CA811A82030541B0083BAB8 /* Project object */;
+}

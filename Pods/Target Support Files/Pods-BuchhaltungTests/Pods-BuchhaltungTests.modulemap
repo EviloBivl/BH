@@ -1,0 +1,6 @@
+framework module Pods_BuchhaltungTests {
+  umbrella header "Pods-BuchhaltungTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

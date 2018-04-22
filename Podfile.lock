@@ -1,0 +1,15 @@
+PODS:
+  - SwiftGen (5.2.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - SwiftGen
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  SwiftGen: 444b4c467e512a4812b8a800d731643fd265139e
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: e6f29ea731ec88ffea6decfc1e0d97a7eef5a0a0
+
+COCOAPODS: 1.4.0
